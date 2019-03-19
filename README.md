@@ -4,4 +4,4 @@
 
 Input - Takes In Account Numbers
 
-Out Put - Returns Money Wons Based On Account Number
+OutPut - Returns Money Wons Based On Account Number
