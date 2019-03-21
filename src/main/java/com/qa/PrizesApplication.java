@@ -11,8 +11,4 @@ public class PrizesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PrizesApplication.class, args);
 	}
-	
-	
-    
-
 }

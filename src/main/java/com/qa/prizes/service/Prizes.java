@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Scope;
 public class Prizes {
 
 	@Scope("prototype")
-	public String prizes(String account) {
+	public static String prizes(String account) {
 		if (account.length() == 7) {
 			if (account.substring(0, 1).equals("a")) {
-				return "Nothing";
+				return "$0";
 			} else if (account.substring(0, 1).equals("b")) {
 				return "$50";
 			}
@@ -19,7 +19,7 @@ public class Prizes {
 			}
 		} else if (account.length() == 9) {
 			if (account.substring(0, 1).equals("a")) {
-				return "Nothing";
+				return "$0";
 			} else if (account.substring(0, 1).equals("b")) {
 				return "$500";
 			}
@@ -28,7 +28,7 @@ public class Prizes {
 			}
 		} else if (account.length() == 11) {
 			if (account.substring(0, 1).equals("a")) {
-				return "Nothing";
+				return "$0";
 			} else if (account.substring(0, 1).equals("b")) {
 				return "$5,000";
 			}
@@ -36,7 +36,7 @@ public class Prizes {
 				return "$10,000";
 			}
 		}
-		return "Nothing";
+		return "$0";
 	}
 
 }

@@ -17,9 +17,7 @@ public class PrizeEndpoints {
 	}
 
 	@PostMapping("/")
-	public String prizeshgdf(@RequestBody AccountEntity account) {
+	public String prizesEndPoint(@RequestBody AccountEntity account) {
 		return service.prizes(account.getAccNumber());
 	}
-	
-	
 }
