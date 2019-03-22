@@ -7,36 +7,36 @@ import org.springframework.context.annotation.Scope;
 public class Prizes {
 
 	@Scope("prototype")
-	public String prizes(String account) {
+	public static int prizes(String account) {
 		if (account.length() == 7) {
 			if (account.substring(0, 1).equals("a")) {
-				return "Nothing";
+				return 0;
 			} else if (account.substring(0, 1).equals("b")) {
-				return "$50";
+				return 50;
 			}
 			if (account.substring(0, 1).equals("c")) {
-				return "$100";
+				return 100;
 			}
 		} else if (account.length() == 9) {
 			if (account.substring(0, 1).equals("a")) {
-				return "Nothing";
+				return 0;
 			} else if (account.substring(0, 1).equals("b")) {
-				return "$500";
+				return 500;
 			}
 			if (account.substring(0, 1).equals("c")) {
-				return "$1,000";
+				return 1000;
 			}
 		} else if (account.length() == 11) {
 			if (account.substring(0, 1).equals("a")) {
-				return "Nothing";
+				return 0;
 			} else if (account.substring(0, 1).equals("b")) {
-				return "$5,000";
+				return 5000;
 			}
 			if (account.substring(0, 1).equals("c")) {
-				return "$10,000";
+				return 10000;
 			}
 		}
-		return "Nothing";
+		return 0;
 	}
 
 }
