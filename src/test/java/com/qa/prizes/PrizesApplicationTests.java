@@ -22,52 +22,52 @@ public class PrizesApplicationTests {
 
 	@Test
 	public void TestNothing() {
-		assertEquals("$0", Prizes.prizes("a123456"));
+		assertEquals(0, Prizes.prizes("a123456"));
 	}
 
 	@Test
 	public void Test50() {
-		assertEquals("$50", Prizes.prizes("b123456"));
+		assertEquals(50, Prizes.prizes("b123456"));
 	}
 
 	@Test
 	public void Test100() {
-		assertEquals("$100", Prizes.prizes("c123456"));
+		assertEquals(100, Prizes.prizes("c123456"));
 	}
 
 	@Test
 	public void TestNothing2() {
-		assertEquals("$0", Prizes.prizes("a12345678"));
+		assertEquals(0, Prizes.prizes("a12345678"));
 	}
 
 	@Test
 	public void Test500() {
-		assertEquals("$500", Prizes.prizes("b12345678"));
+		assertEquals(500, Prizes.prizes("b12345678"));
 	}
 
 	@Test
 	public void Test1000() {
-		assertEquals("$1,000", Prizes.prizes("c12345678"));
+		assertEquals(1000, Prizes.prizes("c12345678"));
 	}
 
 	@Test
 	public void TestNothing3() {
-		assertEquals("$0", Prizes.prizes("a1234567891"));
+		assertEquals(0, Prizes.prizes("a1234567891"));
 	}
 
 	@Test
 	public void Test5000() {
-		assertEquals("$5,000", Prizes.prizes("b1234567891"));
+		assertEquals(5000, Prizes.prizes("b1234567891"));
 	}
 
 	@Test
 	public void Test10000() {
-		assertEquals("$10,000", Prizes.prizes("c1234567891"));
+		assertEquals(10000, Prizes.prizes("c1234567891"));
 	}
 
 	@Test
 	public void TestNothing4() {
-		assertEquals("$0", Prizes.prizes("a1234567"));
+		assertEquals(0, Prizes.prizes("a1234567"));
 	}
 
 	@Test
@@ -89,7 +89,7 @@ public class PrizesApplicationTests {
 	
 	@Test
 	public void TestNoth() {
-		assertEquals("$0", Prizes.prizes("a1234567"));
+		assertEquals(0, Prizes.prizes("a1234567"));
 	}
 	
 	
